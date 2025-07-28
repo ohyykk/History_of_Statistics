@@ -1,0 +1,169 @@
+/* Shared Styles for All Pages */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/image1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 249, 250, 0.2);
+    z-index: -1;
+}
+
+/* About page specific - remove background image */
+body.about-page {
+    background: #f8f9fa;
+}
+
+body.about-page::before {
+    display: none;
+}
+
+/* Contact page specific - use image3 with 40% transparency */
+body.contact-page {
+    background: url('../images/image3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.contact-page::before {
+    background-color: rgba(248, 249, 250, 0.4);
+}
+
+/* Contact form styling with white brackets */
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.contact-form-container h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form-field-bracket {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-field-bracket:focus-within {
+    border-color: #F28C28;
+    box-shadow: 0 0 0 0.2rem rgba(242, 140, 40, 0.25);
+}
+
+.form-field-bracket label {
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-field-bracket .form-control {
+    border: none;
+    background: transparent;
+    padding: 0.5rem 0;
+    box-shadow: none;
+}
+
+.form-field-bracket .form-control:focus {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #b0b0b0 0%, #b0b0b0 100%);
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: white;
+}
+
+.page-header .lead {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
+    color: white;
+}
+
+.content-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border: none;
+    overflow: hidden;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #F28C28 0%, #F28C28 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(242, 140, 40, 0.3);
+    background: linear-gradient(135deg, #e67e22 0%, #e67e22 100%);
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #F28C28;
+    box-shadow: 0 0 0 0.2rem rgba(242, 140, 40, 0.25);
+} 
+
+/* About page specific overrides */
+.about-page {
+    background: #fffdf9 !important;
+}
+
+.about-page .content-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+} 
