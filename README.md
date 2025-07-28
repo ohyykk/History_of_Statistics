@@ -1,6 +1,6 @@
 # STA496H1 – Readings in Statistics: History of Statistics Website
 
-This website showcases the work of **Kiki He**, a senior undergraduate student at the **University of Toronto**, double majoring in **Mathematics and Statistics**. It was created as part of **STA496H1: Readings in Statistics**, an independent study course supervised by **Professor Rohan Alexander** in the **Department of Statistical Sciences**.
+This website showcases the work of **Kiki He**, a senior undergraduate student at the **University of Toronto**, double majoring in **Mathematics and Statistics**. It was created as part of **STA496H1: Readings in Statistics**, an independent study course supervised by **[Professor Rohan Alexander](https://rohanalexander.com/index.html)** in the **Department of Statistical Sciences**.
 
 ## About the Course
 
@@ -15,7 +15,3 @@ This site includes:
 - **Weekly reflections** on historical readings
 - **Research essays** exploring specific themes in the history of statistics
 - A growing **bookshelf** of influential works and references
-
-## Technologies Used
-
-- HTML / CSS / JavaScript
